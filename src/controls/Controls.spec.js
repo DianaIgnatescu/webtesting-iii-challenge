@@ -37,7 +37,7 @@ describe('Controls component', () => {
   });
   it('should disable the open button when the gate is locked', () => {
     const wrap = rtl.render(<Controls locked={true}/>);
-    expect(wrap.getByTestId('closeButton')).toHaveAttribute('disabled');
+    expect(wrap.getByTestId('closeButton')).toBeDisabled();
   });
 
   it('should disable the lock button when the gate is open', () => {
