@@ -11,8 +11,8 @@ describe('Display component', () => {
   it('should render without crashing', () => {
     const wrap = rtl.render(<Display />);
     expect(wrap).toBeTruthy();
+    expect(wrap.asFragment()).toMatchSnapshot();
   });
-
   it('should render with red LED when gate is closed or locked', () => {
     const wrap = rtl.render(<Display closed={true} locked={true}/>);
     expect(wrap.getByTestId(/closeGate/i)).toHaveClass('red-led');

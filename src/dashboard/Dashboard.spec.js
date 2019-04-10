@@ -11,6 +11,7 @@ describe('Dashboard component', () => {
   it('should render without crashing', () => {
     const wrap = rtl.render(<Dashboard />);
     expect(wrap).toBeTruthy();
+    expect(wrap.asFragment()).toMatchSnapshot();
   });
   it('should be able to toggle between open and closed when clicked', () => {
     const wrap = rtl.render(<Dashboard />);

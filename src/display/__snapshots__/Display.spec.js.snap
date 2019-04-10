@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display component should render without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="display panel"
+  >
+    <div
+      class="led green-led"
+      data-testid="lockGate"
+    >
+      Unlocked
+    </div>
+    <div
+      class="led green-led"
+      data-testid="closeGate"
+    >
+      Open
+    </div>
+  </div>
+</DocumentFragment>
+`;
