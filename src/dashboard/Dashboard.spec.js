@@ -1,4 +1,3 @@
-// Test away
 import React from 'react';
 import * as rtl from 'react-testing-library';
 import 'jest-dom/extend-expect';
@@ -42,5 +41,4 @@ describe('Dashboard component', () => {
     rtl.fireEvent.click(lockedButton);
     expect(wrap.queryByText('Unlock Gate')).toBeFalsy();
   })
-
 });
